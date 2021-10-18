@@ -34,6 +34,38 @@ namespace Arrays
 
             arrayAulasSegundaForma[0] = "Trabalhando com Arrays";
             ImprimirPrimeiraForma(arrayAulasSegundaForma);
+
+            Console.WriteLine("A aula modelando está no índice " + Array.IndexOf(arrayAulasSegundaForma, aulaModelando));
+            Console.WriteLine("A aula modelando está no índice " + Array.LastIndexOf(arrayAulasSegundaForma, aulaModelando));
+            Console.WriteLine();
+
+            Array.Reverse(arrayAulasSegundaForma);
+            ImprimirPrimeiraForma(arrayAulasSegundaForma);
+
+            Array.Reverse(arrayAulasSegundaForma);
+            ImprimirPrimeiraForma(arrayAulasSegundaForma);
+
+            Array.Resize(ref arrayAulasSegundaForma, 2);
+            ImprimirPrimeiraForma(arrayAulasSegundaForma);
+            
+            Array.Resize(ref arrayAulasSegundaForma, 3);
+            ImprimirPrimeiraForma(arrayAulasSegundaForma);
+
+            arrayAulasSegundaForma[arrayAulasSegundaForma.Length - 1] = "Conclusão";
+            ImprimirPrimeiraForma(arrayAulasSegundaForma);
+
+            Array.Sort(arrayAulasSegundaForma);
+            ImprimirPrimeiraForma(arrayAulasSegundaForma);
+
+            string[] copia = new string[2];
+            Array.Copy(arrayAulasSegundaForma, 1, copia, 0, 2);
+            ImprimirPrimeiraForma(copia);
+
+            string[] clone = arrayAulasSegundaForma.Clone() as string[];
+            ImprimirPrimeiraForma(clone);
+
+            Array.Clear(clone, 1, 2);
+            ImprimirPrimeiraForma(clone);
         }
 
         private static void ImprimirPrimeiraForma(string[] aulas)
