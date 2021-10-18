@@ -33,6 +33,48 @@ namespace Listas
 
             Console.WriteLine("A última aula é: " + aulas[aulas.Count - 1]);
             Console.WriteLine("A última aula é: " + aulas.Last());
+
+            Console.WriteLine();
+
+            aulas[0] = "Trabalhando com Listas";
+            Imprimir(aulas);
+
+            Console.WriteLine("A primeira aula 'Trabalhando' é: "
+                + aulas.First(aula => aula.Contains("Trabalhando")));
+
+            Console.WriteLine();
+
+            Console.WriteLine("A última aula 'Trabalhando' é: "
+                + aulas.Last(aula => aula.Contains("Trabalhando")));
+
+            Console.WriteLine();
+
+            Console.WriteLine("A primeira aula 'Conclusão' é: "
+                + aulas.FirstOrDefault(aula => aula.Contains("Conclusão")));
+
+            aulas.Reverse();
+            Imprimir(aulas);
+
+            aulas.Reverse();
+            Imprimir(aulas);
+
+            aulas.RemoveAt(aulas.Count - 1);
+            Imprimir(aulas);
+
+            aulas.Add("Conclusão");
+            Imprimir(aulas);
+
+            aulas.Sort();
+            Imprimir(aulas);
+
+            List<string> copia = aulas.GetRange(aulas.Count - 2, 2);
+            Imprimir(copia);
+
+            List<string> clone = new List<string>(aulas);
+            Imprimir(clone);
+
+            clone.RemoveRange(clone.Count - 2, 2);
+            Imprimir(clone);
         }
 
         private static void Imprimir(List<string> aulas)
