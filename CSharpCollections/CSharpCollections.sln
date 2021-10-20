@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListasSomenteLeitura", "Lis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoderDosSets", "PoderDosSets\PoderDosSets.csproj", "{75FE0C12-ABEF-46C7-8D93-CD41CA712C20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetNoModelo", "SetNoModelo\SetNoModelo.csproj", "{F5B73693-ACDB-40FB-884A-6BC0CF1AF027}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{75FE0C12-ABEF-46C7-8D93-CD41CA712C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75FE0C12-ABEF-46C7-8D93-CD41CA712C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75FE0C12-ABEF-46C7-8D93-CD41CA712C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B73693-ACDB-40FB-884A-6BC0CF1AF027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B73693-ACDB-40FB-884A-6BC0CF1AF027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B73693-ACDB-40FB-884A-6BC0CF1AF027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B73693-ACDB-40FB-884A-6BC0CF1AF027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
