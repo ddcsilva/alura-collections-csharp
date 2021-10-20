@@ -37,6 +37,24 @@ namespace SetNoModelo
             {
                 Console.WriteLine(aluno);
             }
+
+            Console.WriteLine();
+
+            //Imprimir: "O aluno a1 está matriculado?"
+            Console.WriteLine($"O aluno a1 {a1.Nome} está matriculado?");
+            //Criar um método EstaMatriculado
+            Console.WriteLine(csharpCollections.EstaMatriculado(a1));
+            //Vamos instanciar uma aluna (Vanessa Tonini)
+            Aluno tonini = new Aluno("Vanessa Tonini", 34672);
+            //e verificar se Tonini está matriculada
+            Console.WriteLine("Tonini está matriculada? " + csharpCollections.EstaMatriculado(tonini));
+            //Mas a1 == a Tonini?
+            Console.WriteLine("a1 == a Tonini?");
+            Console.WriteLine(a1 == tonini);
+            //O que ocorreu? a1 é equals a Tonini?
+            Console.WriteLine("a1 é equals a Tonini?");
+            Console.WriteLine(a1.Equals(tonini));
+            //São diferentes! Precisamos então implementar Equals()
         }
     }
 }
